@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>Please Register Your Interest</h2>
+
+    <!--POST /register-->
+    <form method="POST" action="/register"> <!--html can only do GET & POST-->
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" id="" required></td>
+            </tr>
+            <tr>
+                <td>Available on:</td>
+                <td><input type="date" name="available-date" id="" required></td>
+            </tr>
+            <tr>
+                <td>Vegetarian:</td>
+                <td>
+                    <input type="radio" name="vegetarian" value="yes" id="">
+                    <input type="radio" name="vegetarian" value="no" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>Hobbies:</td>
+                <td>
+                    <input type="checkbox" name="hobby" id="jogging">Jogging
+                    <input type="checkbox" name="hobby" id="movies">Movies
+                    <input type="checkbox" name="hobby" id="travelling">Travel
+                </td>
+            </tr>
+            <tr>
+                <td>Comments</td>
+                <td><textarea name="comments" id="" cols="30" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit">Register Me!</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
