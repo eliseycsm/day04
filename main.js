@@ -12,8 +12,8 @@ app.set('view engine', 'hbs')
 
 //configure express to parse POST application/x-www-form-urlencoded & appn/json
 // **app.use(express.urlencoded({extended: true}))
-//above code reads incoming form data & converts them into json obj.
-//form data is in req.body (body attribute is created by urlencoded
+//above code reads incoming form data & extended: true uses qs library to convert objs and arrs into urlencoded format like json obj.
+//form data is in req.body (body attribute is created by urlencoded)
 
 //app.use(express.json()) 
 //above code's action: any json payload coming in will get parsed and converted into req.body
